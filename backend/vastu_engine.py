@@ -68,6 +68,66 @@ def analyze_vastu(data, language='en'):
                     'remedy': 'மஞ்சள் வர்ணம் பூசவும். அடுப்பின் அடியில் மஞ்சள் கல் வைக்கவும்.',
                     'detail': 'தென்மேற்கு பூமி மற்றும் நிலைத்தன்மையின் மண்டலம். இங்கே உள்ள நெருப்பு நிலைத்தன்மையை எரித்து, உறவு முரண்பாடுகள் மற்றும் பணத்தை சேமிக்க இயலாமைக்கு வழிவகுக்கும்.'
                 }
+            },
+            'north': {
+                'type': 'defect', 'weight': -15,
+                'en': {
+                    'problem': 'Kitchen in North (Kuber Sthan)',
+                    'impact': 'Burns wealth opportunities. Financial stagnation.',
+                    'remedy': 'Place a green plant. Paint walls light green. Shift stove to SE.',
+                    'detail': 'North is the zone of Water and Wealth (Kuber). A kitchen (Fire) here evaporates wealth and opportunities, leading to career stagnation and lack of growth.'
+                },
+                'ta': {
+                    'problem': 'வடக்கில் சமையலறை (குபேர ஸ்தானம்)',
+                    'impact': 'செல்வ வாய்ப்புகளை எரிக்கும். நிதி தேக்கம்.',
+                    'remedy': 'பச்சை செடி வைக்கவும். வெளிர் பச்சை வர்ணம் பூசவும். அடுப்பை தென்கிழக்குக்கு மாற்றவும்.',
+                    'detail': 'வடக்கு நீர் மற்றும் செல்வத்தின் மண்டலம் (குபேரன்). இங்கே சமையலறை (நெருப்பு) இருப்பது செல்வம் மற்றும் வாய்ப்புகளை ஆவியாக்குகிறது, இது தொழில் தேக்கத்திற்கு வழிவகுக்கும்.'
+                }
+            },
+            'west': {
+                'type': 'average', 'weight': 5,
+                'en': {
+                    'problem': 'Kitchen in West (Varuna)',
+                    'impact': 'Average placement. Good for food business. May cause skin issues.',
+                    'remedy': 'Cook facing East or West. Use white or yellow aesthetics.',
+                    'detail': 'West is the zone of Gains and Profits. A kitchen here is excellent for chefs or food businesses but can lead to skin allergies or heat issues for family members.'
+                },
+                'ta': {
+                    'problem': 'மேற்கில் சமையலறை (வருணன்)',
+                    'impact': 'சராசரி இடம். உணவு இலாபத்திற்கு நல்லது. தோல் பிரச்சனைகளைத் தரலாம்.',
+                    'remedy': 'கிழக்கு அல்லது மேற்கு நோக்கி சமைக்கவும். வெள்ளை அல்லது மஞ்சள் நிறங்களைப் பயன்படுத்தவும்.',
+                    'detail': 'மேற்கு இலாபத்தின் மண்டலம். இங்கே சமையலறை இருப்பது சமையல்காரர்களுக்கு சிறந்தது, ஆனால் குடும்ப உறுப்பினர்களுக்கு தோல் ஒவ்வாமை அல்லது வெப்ப பிரச்சனைகளை ஏற்படுத்தலாம்.'
+                }
+            },
+            'south': {
+                'type': 'defect', 'weight': -10,
+                'en': {
+                    'problem': 'Kitchen in South (Yama)',
+                    'impact': 'Causes mental stress and short temper.',
+                    'remedy': 'Paint walls pale red or orange.',
+                    'detail': 'South is the zone of Relaxation and Fame. Fire here disrupts peace of mind, leading to high stress, anger issues, and disturbed sleep patterns.'
+                },
+                'ta': {
+                    'problem': 'தெற்கில் சமையலறை (எமன்)',
+                    'impact': 'மன அழுத்தம் மற்றும் முன் கோபத்தை உண்டாக்கும்.',
+                    'remedy': 'வெளிர் சிவப்பு அல்லது ஆரஞ்சு வர்ணம் பூசவும்.',
+                    'detail': 'தெற்கு ஓய்வு மற்றும் புகழின் மண்டலம். இங்கே நெருப்பு இருப்பது மன அமைதியைக் குலைத்து, அதிக அழுத்தம், கோபம் மற்றும் தூக்கமின்மைக்கு வழிவகுக்கும்.'
+                }
+            },
+            'east': {
+                'type': 'defect', 'weight': -5,
+                'en': {
+                    'problem': 'Kitchen in East (Surya)',
+                    'impact': 'Minor defect. Can cause mild health issues for women.',
+                    'remedy': 'Place a green marble under the stove.',
+                    'detail': 'East is the zone of Social Connections. While not a major defect, a kitchen here can sometimes burn social connections or affect the health of the lady of the house.'
+                },
+                'ta': {
+                    'problem': 'கிழக்கில் சமையலறை (சூரியன்)',
+                    'impact': 'சிறிய குறைபாடு. பெண்களுக்கு லேசான உடல்நலப் பிரச்சனைகளைத் தரலாம்.',
+                    'remedy': 'அடுப்பின் அடியில் பச்சை பளிங்கு கல் வைக்கவும்.',
+                    'detail': 'கிழக்கு சமூக தொடர்புகளின் மண்டலம். இது பெரிய குறைபாடு இல்லை என்றாலும், சில நேரங்களில் சமூக உறவுகளை பாதிக்கலாம் அல்லது வீட்டுப் பெண்களின் ஆரோக்கியத்தை பாதிக்கலாம்.'
+                }
             }
         },
         'master_bedroom': {
@@ -114,6 +174,51 @@ def analyze_vastu(data, language='en'):
                     'impact': 'நெருப்பு மண்டலம். கோபம் மற்றும் தூக்கமின்மையை உருவாக்கும்.', 
                     'remedy': 'குளிர்ச்சியான நிறங்களை (நீலம்/பச்சை) பயன்படுத்தவும்.',
                     'detail': 'தென்கிழக்கு நெருப்பு மண்டலம். இங்கே தூங்குவது உடல் வெப்பத்தையும் கோபத்தையும் அதிகரிக்கிறது, இது அடிக்கடி சண்டைகள் மற்றும் உயர் இரத்த அழுத்தத்திற்கு வழிவகுக்கும்.'
+                }
+            },
+            'north': {
+                'type': 'defect', 'weight': -15,
+                'en': {
+                    'problem': 'Bedroom in North (Kuber)', 
+                    'impact': 'Good for young but bad for couples. No stability.', 
+                    'remedy': 'Use for children or study. Avoid as master bedroom.',
+                    'detail': 'North is ruled by Mercury and Kuber. While good for career and learning, it lacks the Earth element\'s stability required for the master of the house, leading to restless careers.'
+                },
+                'ta': {
+                    'problem': 'வடக்கில் படுக்கையறை (குபேரன்)', 
+                    'impact': 'இளைஞர்களுக்கு நல்லது, தம்பதிகளுக்கு ஏற்றதல்ல. நிலைத்தன்மை இருக்காது.', 
+                    'remedy': 'குழந்தைகள் அல்லது படிப்பதற்கு பயன்படுத்தவும். பிரதான படுக்கையறையாக தவிர்க்கவும்.',
+                    'detail': 'வடக்கு திசை புதன் மற்றும் குபேரால் ஆளப்படுகிறது. தொழில் மற்றும் கல்விக்கு நல்லது என்றாலும், குடும்பத் தலைவருக்குத் தேவையான பூமியின் நிலைத்தன்மை இங்கு இல்லை.'
+                }
+            },
+            'west': {
+                'type': 'good', 'weight': 10,
+                'en': {
+                    'problem': 'Bedroom in West (Varuna)', 
+                    'impact': 'Good for gains and wealth storage.', 
+                    'remedy': 'Sleep with head towards South or East.',
+                    'detail': 'West is the zone of Gains. A master bedroom here ensures that the efforts put in by the family head result in tangible profits and financial security.'
+                },
+                'ta': {
+                    'problem': 'மேற்கில் படுக்கையறை (வருணன்)', 
+                    'impact': 'செல்வம் மற்றும் இலாபத்திற்கு நல்லது.', 
+                    'remedy': 'தெற்கு அல்லது கிழக்கு நோக்கி தலை வைத்து தூங்கவும்.',
+                    'detail': 'மேற்கு இலாபத்தின் மண்டலம். இங்கே பிரதான படுக்கையறை இருப்பது குடும்பத் தலைவரின் முயற்சிகள் உறுதியான இலாபத்தையும் நிதி பாதுகாப்பையும் தருவதை உறுதி செய்கிறது.'
+                }
+            },
+            'north-west': {
+                'type': 'average', 'weight': 5,
+                'en': {
+                    'problem': 'Bedroom in North-West (Vayu)', 
+                    'impact': 'Causes instability and movement. Good for guests.', 
+                    'remedy': 'Use white or cream colors.',
+                    'detail': 'North-West is the zone of Air/Wind. Sleeping here can cause instability in life or frequent traveling. It is best suited for guest bedrooms or marriageable daughters.'
+                },
+                'ta': {
+                    'problem': 'வடமேற்கில் படுக்கையறை (வாயு)', 
+                    'impact': 'நிலையற்ற தன்மை மற்றும் இடத்தை மாற்றும். விருந்தினர்களுக்கு நல்லது.', 
+                    'remedy': 'வெள்ளை அல்லது கிரீம் நிறங்களை பயன்படுத்தவும்.',
+                    'detail': 'வடமேற்கு காற்று மண்டலம். இங்கே தூங்குவது வாழ்க்கையில் உறுதியின்மை அல்லது அடிக்கடி பயணங்களை ஏற்படுத்தும். இது விருந்தினர் அறை அல்லது திருமண வயதுடைய பெண்களுக்கு ஏற்றது.'
                 }
             }
         },
@@ -162,6 +267,51 @@ def analyze_vastu(data, language='en'):
                     'remedy': 'காற்றோட்டத்தை உறுதி செய்யவும்.',
                     'detail': 'வடமேற்கு (காற்று) வெளியேற்றத்தைக் கட்டுப்படுத்துகிறது. இங்கே கழிப்பறை இருப்பது உடலில் இருந்து நச்சுகளையும், மனதிலிருந்து எதிர்மறை உணர்வுகளையும் சரியாக வெளியேற்ற உதவுகிறது.'
                 }
+            },
+            'south-east': {
+                'type': 'defect', 'weight': -20,
+                'en': {
+                    'problem': 'Toilet in South-East (Agni)', 
+                    'impact': 'Fire/Water clash. Legal troubles and women\'s health.', 
+                    'remedy': 'Correct with Copper strips or red bulbs.',
+                    'detail': 'South-East is the direction of Fire. A toilet (Water activity) here extinguishes the fire, leading to digestion issues, legal hassles, and safety concerns for women.'
+                },
+                'ta': {
+                    'problem': 'தென்கிழக்கில் கழிப்பறை (அக்னி)', 
+                    'impact': 'நெருப்பு/நீர் முரண்பாடு. சட்ட சிக்கல்கள் மற்றும் பெண்கள் ஆரோக்கியம் பாதிப்பு.', 
+                    'remedy': 'செப்பு கம்பி அல்லது சிவப்பு விளக்கு பயன்படுத்தவும்.',
+                    'detail': 'தென்கிழக்கு நெருப்பு திசை. இங்கே கழிப்பறை (நீர்) இருப்பது நெருப்பை அணைத்து, செரிமானக் கோளாறுகள், சட்ட சிக்கல்கள் மற்றும் பெண்களின் பாதுகாப்பில் கவலைகளை ஏற்படுத்தும்.'
+                }
+            },
+            'north': {
+                'type': 'defect', 'weight': -10,
+                'en': {
+                    'problem': 'Toilet in North (Kuber)', 
+                    'impact': 'Blocks career growth and money flow.', 
+                    'remedy': 'Use blue tape. Keep it very clean.',
+                    'detail': 'North represents opportunities. A toilet here flushes down opportunities and blocks promotions or new business deals.'
+                },
+                'ta': {
+                    'problem': 'வடக்கில் கழிப்பறை (குபேரன்)', 
+                    'impact': 'தொழில் வளர்ச்சி மற்றும் பண வரவை தடுக்கும்.', 
+                    'remedy': 'நீல நிற டேப் ஒட்டவும். மிகச் சுத்தமாக வைக்கவும்.',
+                    'detail': 'வடக்கு வாய்ப்புகளை குறிக்கிறது. இங்கே கழிப்பறை இருப்பது வாய்ப்புகளை அழித்து, பதவி உயர்வு அல்லது புதிய வணிக ஒப்பந்தங்களை தடுக்கும்.'
+                }
+            },
+            'west': {
+                'type': 'good', 'weight': 5,
+                'en': {
+                    'problem': 'Toilet in West (Varuna)', 
+                    'impact': 'Second best option. Generally acceptable.', 
+                    'remedy': 'Ensure proper exhaust.',
+                    'detail': 'West is the zone of Fulfillment. A toilet here is generally acceptable if the North-West zone is not available, but should be treated if causing lack of fulfillment.'
+                },
+                'ta': {
+                    'problem': 'மேற்கில் கழிப்பறை (வருணன்)', 
+                    'impact': 'இரண்டாவது சிறந்த விருப்பம். பொதுவாக ஏற்றுக் கொள்ளத்தக்கது.', 
+                    'remedy': 'சரியான காற்றோட்டம் உறுதி செய்யவும்.',
+                    'detail': 'மேற்கு நிறைவின் மண்டலம். வடமேற்கு கிடைக்காத பட்சத்தில் இது ஒரு நல்ல மாற்றாகும், ஆனால் அதிருப்தியை ஏற்படுத்தினால் கவனிக்க வேண்டும்.'
+                }
             }
         },
         'entrance': {
@@ -208,6 +358,51 @@ def analyze_vastu(data, language='en'):
                     'impact': 'கஷ்டங்கள் மற்றும் கடன்களின் வாசல்.', 
                     'remedy': 'ஈய பிரமிடு வைக்கவும்.',
                     'detail': 'தென்மேற்கு நுழைவாயில் எதிர்மறை ஆற்றலை உள்ளே அனுமதித்து, நேர்மறை ஆற்றலை வெளியேறச் செய்கிறது. இது போராட்டங்கள், கடன்கள் மற்றும் உறவு தோல்விகளைக் கொண்டுவரும்.'
+                }
+            },
+            'south-east': {
+                'type': 'defect', 'weight': -15, 
+                'en': {
+                    'problem': 'Entrance in South-East', 
+                    'impact': 'Updates Anxiety and Fire accidents.', 
+                    'remedy': 'Paint door Red. Add Copper Swastik.',
+                    'detail': 'South-East is the zone of Fire. An entrance here creates excessive fire energy, leading to angry temperament, accidents, and theft.'
+                }, 
+                'ta': {
+                    'problem': 'தென்கிழக்கு வாசல்', 
+                    'impact': 'பதற்றம் மற்றும் தீ விபத்துகளை உண்டாக்கும்.', 
+                    'remedy': 'கதவுக்கு சிவப்பு வர்ணம் பூசவும். செப்பு ஸ்வஸ்திக் ஒட்டவும்.',
+                    'detail': 'தென்கிழக்கு நெருப்பு மண்டலம். இங்கே வாசல் இருப்பது அதிகப்படியான நெருப்பு ஆற்றலை உருவாக்கி, கோபம், விபத்துக்கள் மற்றும் திருட்டுக்கு வழிவகுக்கும்.'
+                }
+            },
+            'north-west': {
+                'type': 'average', 'weight': 5, 
+                'en': {
+                    'problem': 'Entrance in North-West', 
+                    'impact': 'Variable placement. Helpful people.', 
+                    'remedy': 'Use white colors. Keep clean.',
+                    'detail': 'North-West is the zone of Support. An entrance here can bring helpful people into your life but can also make the residents stay away from home frequently.'
+                }, 
+                'ta': {
+                    'problem': 'வடமேற்கு வாசல்', 
+                    'impact': 'மாறுபட்ட பலன்கள். உதவும் மனிதர்கள்.', 
+                    'remedy': 'வெள்ளை நிறங்களை பயன்படுத்தவும். சுத்தமாக வைக்கவும்.',
+                    'detail': 'வடமேற்கு ஆதரவின் மண்டலம். இங்கே வாசல் இருப்பது உதவும் மனிதர்களை ஈர்க்கும், ஆனால் குடியிருப்பவர்களை அடிக்கடி வீட்டை விட்டு வெளியே இருக்கச் செய்யலாம்.'
+                }
+            },
+            'west': {
+                'type': 'good', 'weight': 10, 
+                'en': {
+                    'problem': 'Entrance in West', 
+                    'impact': 'Good for Gains. Financial profit.', 
+                    'remedy': 'Keep clean. Use metal elements.',
+                    'detail': 'West is the zone of Profits (Varun). An entrance here ensures good financial returns and business profits.'
+                }, 
+                'ta': {
+                    'problem': 'மேற்கு வாசல்', 
+                    'impact': 'இலாபத்திற்கு நல்லது. நிதி ஆதாயம்.', 
+                    'remedy': 'சுத்தமாக வைக்கவும். உலோக பொருட்களை பயன்படுத்தவும்.',
+                    'detail': 'மேற்கு இலாபத்தின் மண்டலம். இங்கே வாசல் அமைப்பது நல்ல நிதி வருவாய் மற்றும் வணிக இலாபங்களை உறுதி செய்கிறது.'
                 }
             }
         }
